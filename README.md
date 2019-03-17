@@ -110,7 +110,8 @@ For example:
     db – Deletes the previous word
     de – Deletes to the end of the current word.
     dL – Deletes all text below the cursor in the file.
-    d/unicorn – After pressing Enter, deletes all text between the cursor and the word “unicorn” in the current file.
+    d/unicorn – After pressing Enter, deletes all text between the cursor and the word “unicorn” in 
+         the current file.
     dd – Deletes an entire line.
 
 As you can see, the combination of combining a command with a cursor movement command is very powerful.
