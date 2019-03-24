@@ -3,7 +3,7 @@
 echo "Configurateing the whole system for this vimrc configuration..."
 echo "Installing needed apps to work..."
 
-sudo apt install -y build-essential cmake python3-dev git vim-tiny 
+sudo apt install -y build-essential cmake python3-dev python3-venv git vim-tiny 
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
