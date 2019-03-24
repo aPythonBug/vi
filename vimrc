@@ -1,4 +1,4 @@
-" Dante's vimrc config.
+    " Dante's vimrc config.
 "
 
 set nocompatible              " be iMproved, required
@@ -17,7 +17,7 @@ Plugin 'tpope/vim-fugitive'
 "filesystem
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'kien/ctrlp.vim' 
+Plugin 'kien/ctrlp.vim'
 
 "html
 Plugin 'jtratner/vim-flavored-markdown'
@@ -33,7 +33,7 @@ Plugin 'scrooloose/syntastic'
 "auto-completion stuff
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'klen/python-mode'
-Plugin 'klen/rope-vim'
+"Plugin 'klen/rope-vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'ervandew/supertab'
 
@@ -68,7 +68,7 @@ else
   colorscheme zenburn
 endif
 
-" Solarized ships with a dark and light theme. To make switching between 
+" Solarized ships with a dark and light theme. To make switching between
 " them very easy (by pressing F5) add:
 call togglebg#map("<F5>")
 
@@ -92,6 +92,8 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 " YouCompleteMe customization
 let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+let g:pydiction_location = '$HOME/.vim/bundle/pydiction/complete-dict'
 
 " Open a NERDTree automatically when vim starts up if no files were specified.
 autocmd StdinReadPre * let s:std_in=1
@@ -134,7 +136,7 @@ set backspace=indent,eol,start
 autocmd FileType python set foldmethod=indent
 
 "use space to open folds
-nnoremap <space> za 
+nnoremap <space> za
 
 "----------Stop python PEP 8 stuff--------------
 
@@ -146,7 +148,7 @@ autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
 "import os
 "import sys
 "if 'VIRTUAL_ENV' in os.environ:
-"  project_base_dir = os.environ['VIRTUAL_ENV']
-"  activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-"  execfile(activate_this, dict(__file__=activate_this))
+"project_base_dir = os.environ['VIRTUAL_ENV']
+"activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+"execfile(activate_this, dict(__file__=activate_this))
 "EOF
